@@ -1,4 +1,4 @@
-# ece209as_project
+# eceM202A_project
 This is repository template for UCLA ECE209AS projects.
 
 Use the folders as follows:
