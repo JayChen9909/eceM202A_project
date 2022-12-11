@@ -5,4 +5,5 @@ show_downloads: true
 
 # Name of website
 title: Arduino Nano33 BLE Applied Emotion Classification Based on the Playing Motion of Musical Instruments 
+logo: /media/Samueli-Logo-rev5.png 
 description: Project for UCLA ECEM202A/CSM213A (Fall 2022)
