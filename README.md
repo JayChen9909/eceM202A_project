@@ -21,7 +21,7 @@ How to run on Nano33 BLE board: (For Mac)
 
 ### Use the folders as follows:
 
-* doc/ for the website contents (report, media).
+* [docs](docs) for the website contents (report, media).
 * software/ for files used for deploying the model on Nano33 BLE board or Arduino Library.
 * data/ for the collected motion data from music instruments of Piano, Violin, Drum, and Clarinet.
 
