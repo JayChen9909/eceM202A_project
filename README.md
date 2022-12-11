@@ -1,4 +1,4 @@
-# Nano33 BLE Applied Emotion Classification for Motions of Musical Instruments 
+# Music Emotion Classifier with Motion on Nano33 BLE 
 ## Yuanlong Chen  
 ### ECE_M202A_project (UCLA ECE FALL 2022)
 ## Abstract  
