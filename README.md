@@ -4,11 +4,9 @@
 ## Abstract  
 ## Instructions:  
 
-Hardware:  
-Arduino Nano33 BLE  
+Hardware: Arduino Nano33 BLE  
   
-Software:  
-Edge Impulse  
+Software: Edge Impulse  
   
 Before Running:  
 1. For Mac：Add ‘arduino-cli’ into your path by following the instruction from https://osxdaily.com/2014/08/14/add-new-path-to-path-command-line/  
