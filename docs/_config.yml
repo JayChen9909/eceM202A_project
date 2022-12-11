@@ -3,6 +3,6 @@ show_downloads: true
 # google_analytics:[Your Google Analytics tracking ID]
 
 # Name of website
-title: Nano33 BLE Applied Emotion Classification for Motions of Musical Instruments 
+title: Music Emotion Classifier with Motion on Nano33 BLE
 logo: /media/Samueli-Logo-rev5.png
 description: Project for UCLA ECEM202A/CSM213A (Fall 2022)
