@@ -1,5 +1,5 @@
 # Table of Contents
-* [Abstract]
+* [Abstract](#0-abstract)
 * [Introduction](#1-introduction)
 * [Related Work](#2-related-work)
 * [Technical Approach](#3-technical-approach)
@@ -7,7 +7,7 @@
 * [Discussion and Conclusions](#5-discussion-and-conclusions)
 * [References](#6-references)
 
-# Abstract
+# 0. Abstract
 
 Provide a brief overview of the project objhectives, approach, and results.
 
