@@ -10,7 +10,14 @@ Software: Edge Impulse
   
 Before Running:  
 1. For Mac：Add ‘arduino-cli’ into your path by following the instruction from https://osxdaily.com/2014/08/14/add-new-path-to-path-command-line/  
-2. For Mac: To connect to your Nano33 BLE, following the instruction from https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-mcu-targets/arduino-nano-33-ble-sense  
+2. For Mac: To connect to your Nano33 BLE, following the instruction from https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-mcu-targets/arduino-nano-33-ble-sense, then check that whether the Nano33 BLE board has been detected in the serial port.  
+3. Attach the Nano33 BLE board onto the player's wrist.  
+
+How to run on Nano33 BLE board: (For Mac)  
+1. Choose a folder in software (for example: clarinet_lefthand-nano-33-ble-sense-v2), double click the flash_mac.command file to flash the firmware of trained model into the connected Nano33 BLE board.  
+2. Open a new terminal, and type in the command: edge-impulse-run-impulse
+3. Then the modal would run automatically with refreshing detection of emotion each five seconde.  
+4. Now it is time for the player to play, and keep checking the feedback of emotion in ratio (for example: happy 0.54, angry 0.33, sad 0.13)  
 
 ### Use the folders as follows:
 
