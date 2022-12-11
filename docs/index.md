@@ -3,7 +3,7 @@
 
 # Team
 
-* Name of team member: Yuanlong Chen \#1 
+* Yuanlong Chen
 
 
 # Required Submissions
