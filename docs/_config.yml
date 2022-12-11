@@ -1,11 +1,10 @@
 theme: jekyll-theme-modernist
 show_downloads: true
+plugins:
+  - "jekyll-github-metadata"
 
 # google_analytics:[Your Google Analytics tracking ID]
 
 # Name of website
-title: Arduino Nano33 BLE Applied 
-  Emotion Classification Based on the  
-  Playing Motion of Musical Instruments 
-logo: /media/Samueli-Logo-rev5.png 
+title: Arduino Nano33 BLE Applied Emotion Classification Based on the Playing Motion of Musical Instruments 
 description: Project for UCLA ECEM202A/CSM213A (Fall 2022)
