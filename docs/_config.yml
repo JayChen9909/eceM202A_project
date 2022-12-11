@@ -1,7 +1,4 @@
 theme: jekyll-theme-modernist
-show_downloads: true
-plugins:
-  - "jekyll-github-metadata"
 
 # google_analytics:[Your Google Analytics tracking ID]
 
