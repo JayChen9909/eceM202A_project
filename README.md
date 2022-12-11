@@ -1,4 +1,6 @@
-# eceM202A_project
+# Arduino Nano33 BLE Applied Emotion Classification Based on the Playing Motion of Musical Instruments  
+## eceM202A_project:  
+
 This is repository template for UCLA ECEM202A projects (Fall 2022)
 
 Use the folders as follows:
