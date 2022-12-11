@@ -1,7 +1,7 @@
 # Arduino Nano33 BLE Applied Emotion Classification Based on the Playing Motion of Musical Instruments  
-## ECE_M202A_project (UCLA ECE FALL 2022)
-## Abstract  
 ## Yuanlong Chen  
+### ECE_M202A_project (UCLA ECE FALL 2022)
+## Abstract  
 ## Instructions:  
 ### Hardware: Arduino Nano33 BLE  
 ### Software: Edge Impulse  
@@ -14,7 +14,7 @@
 
 ### Links:  
 Demo Video:  
-
+https://drive.google.com/file/d/1UJw4sF4zUcUYsoU1NJBmmMxS5ZUQhkQN/view?usp=sharing  
 
 Slide:  
 https://docs.google.com/presentation/d/1xzd-4Lvj697t_955xlcXllmiTQB8dc0Xl4lTnfAXUJA/edit#slide=id.p1  
