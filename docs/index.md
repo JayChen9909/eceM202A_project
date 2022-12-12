@@ -10,7 +10,7 @@ With the support of Neural Networks, the Machine Learning technique has been app
 # Required Submissions  
 
 * [Propopsal](proposal.md)
-* [Midterm Checkpoint Presentation Slides](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/743F6313-4D85-45E3-A058-BF1C82A33F92.jpeg)
+* [Midterm Checkpoint Presentation Slides](media/743F6313-4D85-45E3-A058-BF1C82A33F92.jpeg)
 * [Final Presentation Slides](https://docs.google.com/presentation/d/1xzd-4Lvj697t_955xlcXllmiTQB8dc0Xl4lTnfAXUJA/edit?usp=sharing)
 * [Final Report](report.md)
 * [Demo Video](https://drive.google.com/file/d/1UJw4sF4zUcUYsoU1NJBmmMxS5ZUQhkQN/view?usp=sharing)
