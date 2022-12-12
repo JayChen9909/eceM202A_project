@@ -190,6 +190,6 @@ https://www.emotiv.com/eeg-guide/
 https://onlinelibrary.wiley.com/doi/pdf/10.1002/(SICI)1520-6440(199705)80:5%3C9::AID-ECJC2%3E3.0.CO;2-J
 
 # 7. Acknowledgement
-![acknowledgement](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/1845A715-D9BF-4A02-BF3A-62660D33D6C0.jpeg)
+![acknowledgement](media/1845A715-D9BF-4A02-BF3A-62660D33D6C0.jpeg)
 
 
