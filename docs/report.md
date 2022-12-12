@@ -41,7 +41,7 @@ For the skills required from this project, it can be mainly concluded by the sof
 
 * Metrics of Success:
 
-In this project, the metrics of success are mainly based on the output of classification accuracy of the models based on different instruments data, which can be checked through two ways: The first way is the model evaluations on Edge Impulse. According to the function of Edge Impulse, it is able to run the self-validations based on the split data for tests, and the accuracy of classifying each emotion would be illustrated from a summarized confusion matrix. The second way is the live test on Arduino Nano33 BLE board. By correctly running the model on the Nano33 BLE board, a live test would keep running and refreshing the real-time classification of the emotions, which give the feedback in the form of 
+In this project, the metrics of success are mainly based on the output of classification accuracy of the models based on different instruments data, which can be checked through two ways: The first way is the model evaluations on Edge Impulse. According to the function of Edge Impulse, it is able to run the self-validations based on the split data for tests, and the accuracy of classifying each emotion would be illustrated from a summarized confusion matrix. The second way is the live test on Arduino Nano33 BLE board. By correctly running the model on the Nano33 BLE board, a live test would keep running and refreshing the real-time classification of the emotions, which give the feedback in the form of percentages to emotions repsectively, and higher percentage indicates a more possible emotion that the player is expressing.
 
 # 2. Related Work
 
