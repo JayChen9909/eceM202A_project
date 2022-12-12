@@ -64,22 +64,22 @@ Explore the pitch ‘chroma’: Twelve-dimensional vector with each dimension re
 
 A list of features maintained by the audio signal of music mentioned above can be listed as follows:  
 
-![audio_feature](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/E26E6609-EF80-45DC-B73B-E484638F7D9C.jpeg)
+![audio_feature](media/E26E6609-EF80-45DC-B73B-E484638F7D9C.jpeg)
 
 This research abstracts the features that mainly focus on a series of parameters such as spectral related properties. And by applying different classifiers to train the model based on these features, the accuracy results of them are shown as follows:  
 
-![results](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/AD393D4E-229B-4BE4-BCC4-A8186AE060AE.jpeg)
+![results](media/AD393D4E-229B-4BE4-BCC4-A8186AE060AE.jpeg)
 
 According to the results, the highest accuracy of this method can be 92% from using KNN with a training time of 0.078s. 
 
 Visual Signal
 The second method [2] is using the visual signal to further analyze, which the signal is picked from the frame of video recording a series of body motion of the performers. After removing the background noise of each frame,the bounding rectangle would be generated to focus the main area of motion, which the detail is as follows:  
 
-![visual signal](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/784B55B6-01B9-459A-8747-2958F38310E7.jpeg)
+![visual signal](media/784B55B6-01B9-459A-8747-2958F38310E7.jpeg)
 
 The number of white pixels with non-zero value is measured to be the overall quantity of motion (QoM), which is also summarized as a parameter called ‘cues’. Due to different changing behaviors of cues from different styles of music performance motions, several certain and basic emotion labels are marked to them correspondingly, which can be checked as follows: 
 
-![motion_cue](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/A91CCE4A-FE7C-486C-B6F4-A450105D5A15.jpeg)
+![motion_cue](media/A91CCE4A-FE7C-486C-B6F4-A450105D5A15.jpeg)
 
 After mapping different emotions according to the visual signal in this way, the classifier models are trained to analyze the performers’ emotions properly. 
 
@@ -96,18 +96,18 @@ The third method [3] is using the physiological sensors to collect data while th
 
 And the results of an example those collected sensors data while the musicians are playing the violin are shown as follows:
 
-![phsiological sensors](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/566AC4DF-2923-4160-9BF9-640F94CE2E53.jpeg)
+![phsiological sensors](media/566AC4DF-2923-4160-9BF9-640F94CE2E53.jpeg)
 
 In this research, every gesture was annotated into a full musical score. While no direct measurement of emotion was used in this performance, this piece demonstrated the relations between physiological and audio signals during performance. 
 
 Kinetic Sensors Signal
 The last method [7] uses the data from the signal of kinetic sensors, especially from the Accelerometers. Two applications based on using accelerometers data are mainly the performance control and the tempo detection, which can be as follows:  
 
-![performance control](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/59FC2F89-E363-4F8B-BB27-1B6E139DE505.jpeg)
+![performance control](media/59FC2F89-E363-4F8B-BB27-1B6E139DE505.jpeg)
 
 The workflow of performance control is shown above. It introduces that based on the extracted kinetic parameters, the gesture recognition model is built to output the instruction of controlling the MIDI instrument to do different patterns of performance according to different motions.  
 
-![tempo detect](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/15CCC9E7-0720-4914-87F9-BF59F6DACDA5.jpeg)
+![tempo detect](media/15CCC9E7-0720-4914-87F9-BF59F6DACDA5.jpeg)
 
 A sample of accelerometer sensor data along with actual trajectory and image processing output is shown above. A marker is attached to each top of the conductor’s baton, the tempo is extracted from the locus of the marker by image processing / acceleration data analysis. And by comparison, it can be observed that the acceleration method with even no lag in tempo detection according to the actual motion trajectory, which the image processing method generates an obvious lag instead. 
 
@@ -118,18 +118,18 @@ The technical approach to this project can be mainly divided into four steps: Da
 (1) Data Collection
 As mentioned in the previous introduction, I invited several students from UCLA Herb Alpert School of Music to play their majoring instruments of Piano, Clarinet, Violin and Percussion. The sensor connection and attachment are as follows:
 
-![sensor](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/62C8DD19-C8D6-4A16-AB32-A54772401E5E.jpeghttps://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/62C8DD19-C8D6-4A16-AB32-A54772401E5E.jpeg)
+![sensor](media/62C8DD19-C8D6-4A16-AB32-A54772401E5E.jpeg)
 
 In the left graph, it shows that the sensor (accelerometer on Arduino Nano33 BLE Board) is attached to the wrist of players. And in the right graph, it shows that the data would be collected to be directly uploaded into the Edge Impulse Project through the wire connection. In this time, an overview of collected data can be checked through the following table:  
 
-![data overview](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/5FB8F6E1-DAF0-4D1E-917D-7D9EF7EE0051.jpeg)
+![data overview](media/5FB8F6E1-DAF0-4D1E-917D-7D9EF7EE0051.jpeg)
 
 Based on the playing characteristics of different instruments, sensors are attached to the left hand for the Piano and Clarinet, while for the Violin and Drum it is attached to the right hand. Meanwhile, the emotion labels are basically given by three types for each instrument. Lastly, the numbers of collected samples (5 second for each sample) are shown as well. 
 
 (2) Data Preprocessing
 As the motion data samples are collected as shown above, there is an important step of preprocessing those samples. Since the performers play the instruments consecutively, some samples would record the data of the transition part (e.g. happy -> sad) in music, which is not good to be marked with one certain type of emotion to be further trained. In order to acquire the accurate features from these samples, I need to manually check each of them and delete those are in the transition part, which can be further compared in the following example:
 
-![delete data](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/EF82393F-B363-47B8-9118-05739270929C.jpeg)
+![delete data](media/EF82393F-B363-47B8-9118-05739270929C.jpeg)
 
 (3) Model Settings
 After preparing the samples data as the input into the model, the next step is to design the model. The models on Edge Impulse can be easily built by setting the input block (input axes, window size, window increase,sampling frequency, zero-pad data), the processing block (Spectral Analysis), and learning block (Keras, K-Means). Here I choose Keras with Neural Network classification as the learning method because Keras prefers known processes, while K-means prefers unknown processes. After clicking the button of ‘Generate Features’, the features generated from the Spectral Analysis method would illustrate the details of summarized features that would automatically generate the settings of input layer, dense layer and output layer of the Neural Network. At last, click the ‘Start Training’ button, the results of trained classifiers would illustrate the confusion matrix about how many samples’ emotions are correctly detected, and how many of them are incorrectly estimated according to the split test data, which a total accuracy would be displayed on the top as well. 
@@ -145,21 +145,21 @@ The results of this project can be concluded as three parts:
 (1) Model tuning comparison
 The first part is the results of model tuning. With the function EON from Edge Impulse, it would generate different models settings with the different classification accuracy from a certain instrument’s motion data (listed in the order of high to low). The top three models for each instrument are picked to show as follows:
 
-![classification_1](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/EB128B4D-D27C-4E94-B20C-90D1D32C8701.jpeg)
+![classification_1](media/EB128B4D-D27C-4E94-B20C-90D1D32C8701.jpeg)
 
 The differences among different models are based on the settings of the input window size, window increase, the number of FFT points, filters, and dropout rate. 
 
 (2) Classification performance of different instruments
 The second part compares the classification performance from the best model of each instrument in parallel, which aims to find if there is any common phenomenon that happens in different instruments. The results can be shown as follows:  
 
-![classification2](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/3C27FF4F-5648-475A-9675-804F19400117.jpeg)
+![classification2](media/3C27FF4F-5648-475A-9675-804F19400117.jpeg)
 
 It can be found that the model of the Piano owns the highest classification accuracy of 95%, while the model of the Drum owns the lowest classification accuracy of 71.4%. To further get a closer look in the incorrect classification cases, there is a common phenomenon that it seems to be difficult to classify the emotion of happy and angry in almost all four instruments. This is within my expectation because the motion of expressing happy and anger would be similar in some way, especially for the Percussion. 
 
 (3) Live test on Nano33 BLE Board
 The last part is to check the performance of classifiers on Arduino Nano33 BLE board. Since the test process follows the procedure of recording for 5 seconds and then give the feedback of percentages of different emotions, a demo of the live test can be found through the link of demo video, which took the Piano as an example, and the player was asked to play emotion from sad to happy, and lastly to angry. The live test feedback was pretty good at feedbacking the correct emotion with a higher percentage.  
 
-![live test](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/53E76C52-448C-4A96-931C-8EE84CCFC22D.jpeg)
+![live test](media/53E76C52-448C-4A96-931C-8EE84CCFC22D.jpeg)
 
 # 5. Discussion and Conclusions
 
