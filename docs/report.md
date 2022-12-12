@@ -97,8 +97,9 @@ Kinetic Sensors Signal
 The last method [7] uses the data from the signal of kinetic sensors, especially from the Accelerometers. Two applications based on using accelerometers data are mainly the performance control and the tempo detection, which can be as follows:
 
 
-The workflow of performance control is shown above. It introduces that based on the extracted kinetic parameters, the gesture recognition model is built to output the instruction of controlling the MIDI instrument to do different patterns of performance according to different motions. 
+The workflow of performance control is shown above. It introduces that based on the extracted kinetic parameters, the gesture recognition model is built to output the instruction of controlling the MIDI instrument to do different patterns of performance according to different motions.  
 
+![tempo detect](https://github.com/JayChen9909/eceM202A_project/blob/main/docs/media/15CCC9E7-0720-4914-87F9-BF59F6DACDA5.jpeg)
 
 A sample of accelerometer sensor data along with actual trajectory and image processing output is shown above. A marker is attached to each top of the conductor’s baton, the tempo is extracted from the locus of the marker by image processing / acceleration data analysis. And by comparison, it can be observed that the acceleration method with even no lag in tempo detection according to the actual motion trajectory, which the image processing method generates an obvious lag instead. 
 
