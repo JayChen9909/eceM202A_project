@@ -2,6 +2,9 @@
 ## Yuanlong Chen  
 ### ECE_M202A_project (UCLA ECE FALL 2022)
 ## Abstract  
+
+With the support of Neural Networks, the Machine Learning technique has been applied to more and more multidisciplinary cooperation, especially for music related research. In this project, the Neural Network applied Arduino Nano33 BLE board is used for classifying different emotions based on the motion data of the accelerometer during the musician playing the musical instruments. Through the Edge Impulse, the data from Piano (Keyboard), Clarinet (Wind instrument), Drum (Percussion), and Violin (String) are separately collected and the classifier models are built to be trained, and the exported package can be deployed to the connected Nano33 BLE board for live classification.  
+
 ## Instructions:  
 
 Hardware: Arduino Nano33 BLE  
