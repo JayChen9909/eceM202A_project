@@ -19,7 +19,7 @@ Before Running:
 How to run on Nano33 BLE board: (For Mac)  
 1. Choose a folder in software (for example: clarinet_lefthand-nano-33-ble-sense-v2), double click the flash_mac.command file to flash the firmware of trained model into the connected Nano33 BLE board.  
 2. Open a new terminal, and type in the command: edge-impulse-run-impulse
-3. Then the modal would run automatically with refreshing detection of emotion each five seconde.  
+3. Then the modal would run automatically with refreshing detection of emotion each five second.  
 4. Now it is time for the player to play, and keep checking the feedback of emotion in ratio (for example: happy 0.54, angry 0.33, sad 0.13)  
 
 ### Use the folders as follows:
